@@ -29,9 +29,9 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 const cardChecker = inputId => {
-  let cardDigit = inputId.length - 2
+  let cardDigit = inputId.length - 2 //iterate through the digits of the credit card number in reverse order, starting from the second-to-last digit.
   let checkSum = 0
-  let lenCheck = inputId.length % 2
+  let lenCheck = inputId.length % 2 // checks for odd or even number
   let len2 = lenCheck === 1 ? 0 : 1;
 
   while (cardDigit != -1) {
